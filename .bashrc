@@ -70,7 +70,7 @@ if [ $(id -u) -eq 0 ];
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${BRACKET_COLOR}┌──(${RESET_COLOR}${debian_chroot:+($debian_chroot)}${INFO_COLOR}\u@\h${RESET_COLOR}${BRACKET_COLOR})${RESET_COLOR}-${BRACKET_COLOR}[${RESET_COLOR}${INFO_COLOR}\w${RESET_COLOR}${BRACKET_COLOR}]\n└─${RESET_COLOR}${INFO_COLOR}\$${RESET_COLOR} '
+    PS1='${BRACKET_COLOR}┌──(${RESET_COLOR}${debian_chroot:+($debian_chroot)}${INFO_COLOR}\u@\h${RESET_COLOR}${BRACKET_COLOR})${RESET_COLOR}-${BRACKET_COLOR}[${RESET_COLOR}${INFO_COLOR}\w${RESET_COLOR}${BRACKET_COLOR}]${RESET_COLOR}\n${BRACKET_COLOR}└─${RESET_COLOR}${INFO_COLOR}\$${RESET_COLOR} '
 else
     PS1='┌──(${debian_chroot:+($debian_chroot)}\u@\h)-[\w]\n└─\$ '
 fi
